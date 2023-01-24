@@ -1,0 +1,185 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}	
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{pgfplots}
+\pgfplotsset{compat = newest}
+
+\title{Spadek swobodny}
+\author{Dominik Gasztych}
+\date{January 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Wprowadzenie teoretyczne}
+Spadek swobodny – ruch odbywający się wyłącznie pod
+wpływem ciężaru (siły grawitacji), bez oporów ośrodka. Przyjmuje się, że spadek
+rozpoczyna się od spoczynku, w odróżnieniu od ruchu w polu grawitacyjnym z
+prędkością początkową zwanego rzutem.
+\begin{equation}
+    h(t)=h_0- gt^2/2
+\end{equation}
+
+\section{Przebieg eksperymentu}
+
+\begin{center}
+\includegraphics[scale=0.5]{rys0010.jpg}
+\end{center}
+
+\section{Wyniki pomiaru}
+
+\begin{center}
+\begin{longtable}{|c|c|}
+\caption{Czas i droga w spadku swobodnym} \\
+
+\hline
+t{[}s{]} & s{[}m{]} \\
+0,0      & 0,00     \\
+0,1      & 0,05     \\
+0,2      & 0,20     \\
+0,3      & 0,44     \\
+0,4      & 0,78     \\
+0,5      & 1,23     \\
+0,6      & 1,77     \\
+0,7      & 2,40     \\
+0,8      & 3,14     \\
+0,9      & 3,97     \\
+1,0      & 4,91     \\
+1,1      & 5,94     \\
+1,2      & 7,06     \\
+1,3      & 8,29     \\
+1,4      & 9,61     \\
+1,5      & 11,04    \\
+1,6      & 12,56    \\
+1,7      & 14,18    \\
+1,8      & 15,89    \\
+1,9      & 17,71    \\
+2,0      & 19,62    \\
+2,1      & 21,63    \\
+2,2      & 23,74    \\
+2,3      & 25,95    \\
+2,4      & 28,25    \\
+2,5      & 30,66    \\
+2,6      & 33,16    \\
+2,7      & 35,76    \\
+2,8      & 38,46    \\
+2,9      & 41,25    \\
+3,0      & 44,15    \\
+3,1      & 47,14    \\
+3,2      & 50,23    \\
+3,3      & 53,42    \\
+3,4      & 56,70    \\
+3,5      & 60,09    \\
+3,6      & 63,57    \\
+3,7      & 67,15    \\
+3,8      & 70,83    \\
+3,9      & 74,61    \\
+4,0      & 78,48    \\
+4,1      & 82,45    \\
+4,2      & 86,52    \\
+4,3      & 90,69    \\
+4,4      & 94,96    \\
+4,5      & 99,33    \\
+4,6      & 103,79   \\
+4,7      & 108,35   \\
+4,8      & 113,01   \\
+4,9      & 117,77   \\
+5,0      & 122,63   \\
+5,1      & 127,58   \\
+5,2      & 132,63   \\
+5,3      & 137,78   \\
+5,4      & 143,03   \\
+5,5      & 148,38   \\
+5,6      & 153,82   \\
+5,7      & 159,36   \\
+5,8      & 165,00   \\
+5,9      & 170,74   \\
+6,0      & 176,58   \\
+6,1      & 182,52   \\
+6,2      & 188,55   \\
+6,3      & 194,68   \\
+6,4      & 200,91   \\
+6,5      & 207,24   \\
+6,6      & 213,66   \\
+6,7      & 220,19   \\
+6,8      & 226,81   \\
+6,9      & 233,53   \\
+7,0      & 240,35   \\
+7,1      & 247,26   \\
+7,2      & 254,28   \\
+7,3      & 261,39   \\
+7,4      & 268,60   \\
+7,5      & 275,91   \\
+7,6      & 283,31   \\
+7,7      & 290,82   \\
+7,8      & 298,42   \\
+7,9      & 306,12   \\
+8,0      & 313,92   \\
+8,1      & 321,82   \\
+8,2      & 329,81   \\
+8,3      & 337,91   \\
+8,4      & 346,10   \\
+8,5      & 354,39   \\
+8,6      & 362,77   \\
+8,7      & 371,26   \\
+8,8      & 379,84   \\
+8,9      & 388,53   \\
+9,0      & 397,31   \\
+9,1      & 406,18   \\
+9,2      & 415,16   \\
+9,3      & 424,23   \\
+9,4      & 433,41   \\
+9,5      & 442,68   \\
+9,6      & 452,04   \\
+9,7      & 461,51   \\
+9,8      & 471,08   \\
+9,9      & 480,74   \\
+10,0     & 490,50  
+\end{longtable}
+\end{center}
+
+
+\section{Wnioski}
+Przyspieszenie spadających ciał nie zależy od ich masy. Spadek swobodny, to taki w
+którym nie ma oporu powietrza  - ciała puszczone z tej samej wysokości  niezależnie
+od masy i kształtu spadają w tym samym czasie pod wpływem siły grawitacji. Czas
+spadku zależy od wysokości.
+ \\ 
+
+ \begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    title={Droga i czas w spadku swobodnym},
+    xlabel={T[s]},
+    ylabel={S[m]},
+    xmin=0, xmax=10,
+    ymin=0, ymax=600,
+    legend pos=north west,
+    ymajorgrids=true,
+    grid style=dashed,
+]
+
+\addplot+[
+    only marks,
+    scatter,
+    mark=halfcircle*,
+    mark size=1pt]
+table[meta = s]
+{dane3.txt};
+
+\addplot [
+    domain=0:10, 
+    samples=100, 
+    color=red,
+]
+{(9.8*x*x)/2};
+
+ 
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\end{document}
